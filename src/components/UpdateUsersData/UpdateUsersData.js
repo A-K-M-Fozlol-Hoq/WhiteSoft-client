@@ -10,7 +10,7 @@ const UpdateUsersData = () => {
                 setUserData(data)
                 console.log(usersData)
             })
-    }, [usersData.length])
+    }, [usersData.length]);
     return (
         <div>
             

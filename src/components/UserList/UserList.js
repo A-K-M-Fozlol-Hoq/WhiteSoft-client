@@ -3,7 +3,7 @@ import { UserDataContext } from "../../App";
 import "./UserList.css";
 
 const UserList = ( props ) => {
-    const [ usersData, setUsersData ] = useContext(UserDataContext);
+    const [ usersData,  ] = useContext(UserDataContext);
 
   return (
     <div className="user-list">
