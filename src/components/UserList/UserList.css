@@ -1,0 +1,19 @@
+.user-list table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .user-list td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .user-list tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .user-list{
+    width:80%;
+    margin:0 auto 50px;
+  }

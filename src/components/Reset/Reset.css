@@ -1,0 +1,20 @@
+.reset{
+    position: relative;
+  }
+  .reset .btn {
+    position: absolute;
+    left: 45%;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .reset .btn:hover {
+    background-color: yellow;
+    color: red;
+  }

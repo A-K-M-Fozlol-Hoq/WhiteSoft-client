@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import "./App.css";
+import Form from "./components/Form/Form";
+import Reset from "./components/Reset/Reset";
+import UpdateUsersData from "./components/UpdateUsersData/UpdateUsersData";
+import UserList from "./components/UserList/UserList";
 
+export const UserDataContext = createContext([]);
 function App() {
+  const [ usersData, setUsersData ]  = useState([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserDataContext.Provider value= {[ usersData, setUsersData ]} >
+      <UpdateUsersData></UpdateUsersData>
+      <Form></Form>
+      <UserList></UserList>
+      <Reset></Reset>
+    </UserDataContext.Provider>
   );
 }
 
