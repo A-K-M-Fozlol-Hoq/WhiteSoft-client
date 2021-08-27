@@ -6,7 +6,6 @@ const Reset = () => {
     const [ usersData, setUserData ] = useContext(UserDataContext);
 
     const resetUserData = () => {
-        setUserData([])
         fetch("https://morning-headland-46638.herokuapp.com/deleteAllUserData", {
           method: "DELETE",
         })
@@ -14,6 +13,7 @@ const Reset = () => {
           .then((data) => {
             if(data){
                 console.log(data);
+                setUserData([])
             }
           })
           .catch((error) => {
